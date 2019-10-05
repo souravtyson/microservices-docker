@@ -1,0 +1,8 @@
+app:
+  datasource:
+    jdbc-url: jdbc:postgresql://172.17.0.2:5432/demodb
+    username: postgres
+    password: password
+
+server:
+  port: 9090
