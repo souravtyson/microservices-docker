@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: data-transformer
+
+server:
+  port: 8081
