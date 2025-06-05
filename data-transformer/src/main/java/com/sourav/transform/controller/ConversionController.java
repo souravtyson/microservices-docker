@@ -13,7 +13,6 @@ public class ConversionController {
 	@RequestMapping(value = "/xmltoobject", method = RequestMethod.POST, consumes = { "application/xml" }, produces = {
 			"text/plain" })
 	public String convertToObject(@RequestBody Employee emp) {
-		String details = emp.getDesignation() +"  "+emp.getEmpId();
-		return details;
+		return emp.getDesignation() +"  "+emp.getEmpId();
     }
 }

@@ -1,6 +1,6 @@
-package com.ss.product.repository;
+package com.sourav.product.repository;
 
-import com.ss.product.entity.Product;
+import com.sourav.product.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

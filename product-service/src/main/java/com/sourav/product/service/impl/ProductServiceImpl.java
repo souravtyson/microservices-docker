@@ -1,8 +1,8 @@
-package com.ss.product.service.impl;
+package com.sourav.product.service.impl;
 
-import com.ss.product.entity.Product;
-import com.ss.product.repository.ProductRepo;
-import com.ss.product.service.ProductService;
+import com.sourav.product.entity.Product;
+import com.sourav.product.repository.ProductRepo;
+import com.sourav.product.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

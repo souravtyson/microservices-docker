@@ -1,6 +1,6 @@
-package com.ss.product.service;
+package com.sourav.product.service;
 
-import com.ss.product.entity.Product;
+import com.sourav.product.entity.Product;
 
 import java.util.List;
 

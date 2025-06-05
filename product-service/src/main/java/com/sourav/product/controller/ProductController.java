@@ -1,7 +1,7 @@
-package com.ss.product.controller;
+package com.sourav.product.controller;
 
-import com.ss.product.entity.Product;
-import com.ss.product.service.ProductService;
+import com.sourav.product.entity.Product;
+import com.sourav.product.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

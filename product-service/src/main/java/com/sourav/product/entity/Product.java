@@ -1,4 +1,4 @@
-package com.ss.product.entity;
+package com.sourav.product.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
