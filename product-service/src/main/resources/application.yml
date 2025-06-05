@@ -6,11 +6,15 @@ spring:
         name: product-service
 
 eureka:
+    instance:
+        leaseRenewalIntervalInSeconds: 10
+        leaseExpirationDurationInSeconds: 30
     client:
+        registryFetchIntervalSeconds: 5
         register-with-eureka: true
         fetch-registry: true
         service-url:
-            defaultZone: http://localhost:8082/eureka/
+            defaultZone: http://localhost:8761/eureka/
             datasource:
                 url: jdbc:h2:mem:productdb;
                 username: root
@@ -19,3 +23,8 @@ eureka:
             h2:
                 console:
                     enabled: true
+            jpa:
+                hibernate:
+                    ddl-auto: update
+                show-sql: true
+                database-platform: org.hibernate.dialect.H2Dialect
