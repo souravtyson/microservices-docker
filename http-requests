@@ -1,0 +1,15 @@
+curl -X GET http://localhost:8086/product/1 -H 'Content-Type: application/json'
+curl -X GET http://localhost:8086/product/user/2183891 -H 'Content-Type: application/json'
+curl -X GET http://localhost:8086/product/ -H 'Content-Type: application/json'
+curl -X POST http://localhost:8086/product/ -d'{"productName": "Moto Edge 50 fusion","productCategory": "Mobile","productPrice": 26000,"userId": 2183891}' -H 'Content-Type:application/json'
+
+curl -X GET 'http://localhost:8086/user/' -H 'Content-Type: application/json'
+curl -X POST 'http://localhost:8086/user/' -H 'Content-Type: application/json' -d'{"name": "sourav","age": 32,"city": "Bangalore","gender": "Male","email": "souravtyson@gmail.com"}'
+curl -X GET 'http://localhost:8086/user/1' -H 'Content-Type: application/json'
+curl -X GET 'http://localhost:8086/user/1/products' -H 'Content-Type: application/json'
+
+
+curl -X POST http://localhost:8086/product/ -d'{"productName": "Samsung s24","productCategory": "Mobile","productPrice": 106000,"userId": 1}' -H 'Content-Type:application/json'
+curl -X POST 'http://localhost:8086/user/' -H 'Content-Type: application/json' -d'{"name": "John","age": 32,"city": "US","gender": "Male","email": "john@gmail.com"}'
+ curl -X POST http://localhost:8086/product/ -d'{"productName": "Redmi 2","productCategory": "Mobile","productPrice": 10600,"userId": 2}' -H 'Content-Type:application/json'
+  curl -X POST http://localhost:8086/product/ -d'{"productName": "Vivo 2","productCategory": "Mobile","productPrice": 20600,"userId": 2}' -H 'Content-Type:application/json'

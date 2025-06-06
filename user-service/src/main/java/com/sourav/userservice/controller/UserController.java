@@ -1,6 +1,7 @@
 package com.sourav.userservice.controller;
 
 import com.sourav.userservice.entity.UserDetails;
+import com.sourav.userservice.model.Product;
 import com.sourav.userservice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -17,13 +18,13 @@ public class UserController {
     private UserService userService;
 
     @GetMapping(value = "/{id}")
-    public String getUser(@PathVariable Long id) {
-        return userService.getUserByUserId(id).toString();
+    public ResponseEntity<UserDetails> getUser(@PathVariable Long id) {
+        return ResponseEntity.ok(userService.getUserByUserId(id));
     }
 
     @GetMapping(value = "/{id}/products")
-    public String getProductsByUserId(@PathVariable Long id) {
-        return userService.getAllProductsByUserId(id).toString();
+    public ResponseEntity<List<Product>> getProductsByUserId(@PathVariable Long id) {
+        return ResponseEntity.ok(userService.getAllProductsByUserId(id));
     }
 
     @GetMapping(value = "/")
