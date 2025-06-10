@@ -12,7 +12,7 @@
 	<artifactId>api-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gateway</name>
-	<description>Use this as a api gateway for rounting and load balancing</description>
+	<description>Use this as api gateway for rounting and load balancing</description>
 	<url/>
 	<licenses>
 		<license/>
