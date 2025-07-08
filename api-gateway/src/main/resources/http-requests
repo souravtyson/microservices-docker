@@ -13,3 +13,13 @@ curl -X POST http://localhost:8086/product/ -d'{"productName": "Samsung s24","pr
 curl -X POST 'http://localhost:8086/user/' -H 'Content-Type: application/json' -d'{"name": "John","age": 32,"city": "US","gender": "Male","email": "john@gmail.com"}'
 curl -X POST http://localhost:8086/product/ -d'{"productName": "Redmi 2","productCategory": "Mobile","productPrice": 10600,"userId": 2}' -H 'Content-Type:application/json'
 curl -X POST http://localhost:8086/product/ -d'{"productName": "Vivo 2","productCategory": "Mobile","productPrice": 20600,"userId": 2}' -H 'Content-Type:application/json'
+
+curl -X GET  http://localhost:8086/product/ -H 'Content-Type: application/json' -H 'Authorization:Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ6QU1jSkt2dk92MWIyTmNleUJBOW5ZZkV2SnN6RHpJZEZLTVhVUHY1N09vIn0.eyJleHAiOjE3NDk1NTc1MDgsImlhdCI6MTc0OTU1NDgwOCwianRpIjoiODdkNjBhZjgtOWIyOC00N2EzLThjYjItNWI1NWZkMzE5MDc2IiwiaXNzIjoiaHR0cHM6Ly8xOTIuMTY4LjEzLjE2OTo5OTk4L2F1dGgvcmVhbG1zL21hc3RlciIsInN1YiI6Ijc2NDAxMjNhLWZiZGUtNGZlNS05ODEyLTU4MWNkMWUzYTljMSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImFkbWluLWNsaSIsInNpZCI6ImIxMmNkZjI2LWFmM2ItNDRhZi1hOTVkLTVmZDI2NGUyYjM1ZSIsImFjciI6IjEiLCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImdyYWZhbmEiOnsicm9sZSI6IkFkbWluIn0sIm5hbWUiOiJIZWFsc29mdHdhcmUiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhcHBzb25lYWRtaW4iLCJnaXZlbl9uYW1lIjoiSGVhbHNvZnR3YXJlIiwiZmFtaWx5X25hbWUiOiIiLCJlbWFpbCI6ImhlYWxAaGVhbHNvZnR3YXJlLmFpIn0.IBO_IPhv-PBCbL0RWi3YhRfT8eoqfO-qKLFw8wG8SPek-Jyc-umM1Co68VVVyaUBkSBDqHdQcn0J2wGlAj-9uOl98jBRZVdfIn5ilaBiMYkrjuzixUizES7K3XdFOa1s-pOezhQMsQoiimh2x9o_aGd8yWVZyOhjCFAyuGQ06Fe96d74mEBZdm5KZ07Oo9uei8Pb1nWEsiHZkOSLi4Tgevgrj2Zcv3etI71FaL2RXsPW7kBeo_xUCCBo527E5-Cl2H8Cbhb4sHfNRniRZ6g0hQGHYFLjn7EES6Yy_uWobzEMHoFrqllZcKYHCw8QcVyhuQ1fjNw2EDz5hJRuz6aMYQ'
+
+curl -i -X POST \
+   -H "Content-Type:application/x-www-form-urlencoded" \
+   -d "client_id=admin-cli" \
+   -d "username=appsoneadmin" \
+   -d "password=Appsone@123" \
+   -d "grant_type=password" \
+ 'https://192.168.13.166:9998/auth/realms/master/protocol/openid-connect/token'
